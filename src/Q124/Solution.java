@@ -1,9 +1,11 @@
 package Q124;
 
+import common.TreeNode;
+
 /**
  * Created by Kry·L on 2018/3/4.
  */
-public class Q124 {
+public class Solution {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -11,9 +13,6 @@ public class Q124 {
 
         System.out.println(new Solution().maxPathSum(root));
     }
-}
-
-class Solution {
     public int max = Integer.MIN_VALUE;
 
     public int maxPathSum(TreeNode root) {
@@ -42,12 +41,3 @@ class Solution {
     }
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
